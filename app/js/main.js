@@ -68,3 +68,5 @@ fileUploader.addEventListener('change', (event) => {
 		filename.innerHTML = '';
 	});
 });
+
+
