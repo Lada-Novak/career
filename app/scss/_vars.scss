@@ -1,0 +1,41 @@
+$black:#222222;
+$dark_grey:#4E4D4D;
+$pink:#E6007E;
+$grey:#D0D5DD;
+$light_grey:#EFEFEF;
+$white:#FFFFFF;
+
+
+%heliosC-400 {
+	font-family: 'HeliosC',
+	sans-serif;
+	font-weight: 400;
+}
+%heliosC-700 {
+	font-family: 'HeliosC-Bold',
+		sans-serif;
+	font-weight: 700;
+}
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+// @mixin cut-text($line){
+//   overflow: hidden;
+//   display: -webkit-box;
+//   -webkit-line-clamp: $line;
+//   -webkit-box-orient: vertical;
+// }
+@mixin flex-setting($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+
+
+

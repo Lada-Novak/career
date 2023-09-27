@@ -1,0 +1,123 @@
+.wefind {
+	padding: 80px 0;
+	background-color: $light_grey;
+
+	&__box {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 50px;
+	}
+
+	&__box-item:not(:last-child) {
+		padding-right: 24px;
+		border-right: 2px solid $grey;
+	}
+
+	&__box-item:not(:first-child) {
+		padding-left: 24px;
+	}
+
+	&__box-title {
+		@extend %heliosC-700;
+	}
+
+	&__box-text {
+		font-size: 20px;
+	}
+
+	&__text {
+		margin-bottom: 44px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__option {
+		width: calc(50% - 110px);
+	}
+
+	&__option-title {
+		margin-bottom: 24px;
+		color: $pink;
+	}
+
+	&__option-item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	&__option-text {
+		position: relative;
+		padding-left: 22px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			background-color: $pink;
+		}
+	}
+
+	@media(max-width:768px) {
+		&__box {
+			display: block;
+			margin-bottom: 30px;
+		}
+
+		&__box-item:not(:last-child) {
+			margin-bottom: 16px;
+			padding-right: 0;
+			border-right: none;
+		}
+
+		&__box-item:not(:first-child) {
+			padding-left: 0;
+		}
+
+		&__text {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media(max-width:689px) {
+		&__inner {
+			display: block;
+		}
+
+		&__option {
+			width: 100%;
+		}
+
+		&__option:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	@media(max-width:440px) {
+    &__box {
+      margin-bottom: 24px;
+    }
+		&__box-title {
+			font-size: 20px;
+		}
+
+		&__box-text {
+			font-size: 18px;
+		}
+
+		&__text {
+			margin-bottom: 24px;
+		}
+    &__option-title{
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+    &__option-text {
+      font-size: 18px;
+    }
+	}
+}
